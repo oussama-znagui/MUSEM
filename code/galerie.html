@@ -4,26 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="style-mobile.css">
+    
+    <title>MUSEM - Galerie</title>
 </head>
 <body>
     <header class="page2">
         <div class="p2">
             
-                <nav class="navi">
-                    <div class="logo">
-                        <span>
-                            MUSEM
-                        </span>
-                    </div>
-                    <div class="nav-bar">
-                        <ul class="navigation">
-                            <li><a href="index.html">Acceuil</a></li>
-                            <li><a href="galerie.html" class="mactive">Galerie</a></li>
-                            <li><a href="atelier.html">Atelier</a></li>
-                        </ul>
-                    </div>
-                </nav>
+            <nav class="navi" id="nav">
+                <div class="logo">
+                    <span>
+                        MUSEM
+                    </span>
+                </div>
+                
+                    <ul class="navigation">
+                        <li><a href="index.html" >Acceuil</a></li>
+                        <li><a href="galerie.html" class="mactive">Galerie</a></li>
+                        <li><a href="atelier.html">Atelier</a></li>
+                    </ul>
+                    
+                
+                <div id="icon"></div>
+            </nav>
+            <script src="script.js"></script>
                 <div class="contenu-page2">
                     <div class="desc-page2">
                         <h1>
@@ -154,7 +159,7 @@
                 Nous fabriquons des produits en céramiques avec des formes, couleurs, dessins et dimensions personnalisables.
                 Nous assistons nos clients dans la définition de leur besoin, le choix des designs, la rédaction des textes d’accompagnement, le choix des emballages…</p>
             <a href="" class="b-s2">Contactez nous</a>
-            <p>
+            <p id="b-s2-p">
                 Les modèles présentés dans notre site web ne représentent qu’une petite sélection de notre catalogue. Pour recevoir notre catalogue intégral, nous vous invitons à nous contacter sur le lien suivant.
             </p>
 

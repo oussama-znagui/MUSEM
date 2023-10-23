@@ -50,6 +50,10 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 .mactive{
     color: #eeff00 !important;
 }
+#icon{
+    display: none;
+    cursor: pointer;
+}
 
 
 .contenu-page1{
@@ -142,7 +146,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 /*-------------------------------------------------------------------------------------------------*/
 
 .s3{
-    height: 90vh;
+    height: 150vh;
     background-color: #EDEDED;
 }
 
@@ -156,49 +160,44 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 .i{
     width: 25%;
 }
-.caroussel{
+
+
+.carousel{
+    position: relative;    
+}
+
+.carousel_item{
+    height: 300px;
+    background-color: red;
+    padding: 1em;   
+    display: none;
+}
+
+.carousel_item-selected{
+    display: block;
+}
+
+.carousel_nav{
     width: 100%;
-    display: flex;
-    position: relative;
-   
+    padding: 4em 0;
     
-}
-
-.caroussel ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.slide{
     position: absolute;
-    opacity: 0;
+    top: 0;
+    left: 0;
+    background-color: green;
 }
+.carousel_bitton{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: gray;
+    border-radius: 50%;
+    margin: 0 2em;
+    cursor: pointer;
 
-.slide[data-active]{
-    opacity: 1;
 }
-
-
-.crou-desc{
-    width: 25%;
-    
-}
-
-.caroussel ul li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5em;
-}
-
-.caroussel ul li h2{
-    font-family: 'Brogte', sans-serif;
-    color: #00153E; 
-}
-.caroussel ul li p{
-    
-    margin: 1em 0;
+.carousel_bitton-selected{
+    background-color: #00153E;
 }
 
 /*-------------------------------------------------------------------------------------------------*/
@@ -278,10 +277,28 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 
 
 .faq{
-    height: 100vh;
+    height: auto;
+    padding: 3em 0;
     background-color: #EDEDED;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.reponse p{
+    padding-top: 2em;
 }
 
+.reponse{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease;
+    overflow: hidden;
+}
 .faq h1{
     font-family: 'Brogte', sans-serif;
     color: #00153E;
@@ -291,6 +308,28 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 }
 
 
+.faqq{
+    width: 60%;
+    margin-top: 2em;
+    padding-bottom: 1em;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+.faqq.active .reponse{
+    max-height: 30em;
+}
+
+.faqq.active button{
+    transform: rotate(180deg);
+}
+
+
+.faqq button{
+    transform: trasform .5s ease-in;
+    background-color: transparent;
+    border-style: none;
+}
 footer{
     height: 60vh;
     background-image: url('../Images/1.jpg');
@@ -487,10 +526,14 @@ footer p{
     align-items: center;
     justify-content: space-between;
 }
+
+
 .item img{
     width: 100%;
     height: 70%;
 }
+
+
 
 .item h4{
     font-family: 'Brogte', sans-serif;
@@ -499,6 +542,10 @@ footer p{
     font-size: 1.5em;
     text-decoration: underline;
     margin: 1em 0;
+}
+.item h4:hover{
+    text-decoration: none;
+    
 }
 
 .articles{
@@ -522,6 +569,11 @@ footer p{
     opacity: 0.7;
 
 }
+#b-s2-p{
+    font-size: 0.6em;
+    font-family: Inria Serif;
+    width: 80%;
+}
 
 .b-s2:hover{
     background-color: #00153E;
@@ -531,6 +583,10 @@ footer p{
 }
 
 /*-------------------------------------------------------------------------------------------------*/
+
+
+
+
 .S3-g{
     height: 70vh;
     background-color: #dadada;
@@ -565,6 +621,90 @@ footer p{
     background-size: cover;
 }
 
+.formm{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 2em 0;
+}
+.s-form{
+    height: auto;
+    padding: 2em 0;
+    background-color: #272727;
+
+}
+
+.s-form h1{
+    text-align: center;
+    color: white;
+    font-family: 'Brogte', sans-serif;
+    font-size: 2em;
+    
+}
+
+.vd{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+video{
+    width: 85%;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.f{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2em 2em;
+}
+.f h1{
+    font-family: 'Brogte', sans-serif;
+    color: white;
+    text-align: center;
+}
+.ifinsc{
+    width: 100%;
+    background-color: transparent;
+    border-style: none;
+    border-bottom: 2px solid white !important;
+    margin: 1.5em 0;
+    
+}
+.sbmt{
+    width: 30%;
+    border: 2px solid white;
+    padding: 0.6em 3em;
+    font-family: 'Brogte', sans-serif;
+    display: inline-block;
+    
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+   
+    text-align: center;
+    background-color: transparent;
+    
+}
+
+.sbmt:hover{
+    background-color: #00153E;
+    color: white;
+    
+    transition-duration: 1s;
+}
 /*-------------------------------------------------------------------------------------------------*/
 
 .a-s1{
@@ -675,3 +815,9 @@ footer p{
     
     
 }
+
+
+
+
+
+

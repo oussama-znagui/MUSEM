@@ -4,26 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="style-mobile.css">
+    
+    <title>MUSEM - Atelier</title>
 </head>
 <body>
     <header class="page3">
         <div class="p2">
             
-                <nav class="navi">
-                    <div class="logo">
-                        <span>
-                            MUSEM
-                        </span>
-                    </div>
-                    <div class="nav-bar">
-                        <ul class="navigation">
-                            <li><a href="index.html">Acceuil</a></li>
-                            <li><a href="galerie.html" >Galerie</a></li>
-                            <li><a href="atelier.html" class="mactive">Atelier</a></li>
-                        </ul>
-                    </div>
-                </nav>
+            <nav class="navi" id="nav">
+                <div class="logo">
+                    <span>
+                        MUSEM
+                    </span>
+                </div>
+                
+                    <ul class="navigation">
+                        <li><a href="index.html" >Acceuil</a></li>
+                        <li><a href="galerie.html" >Galerie</a></li>
+                        <li><a href="atelier.html" class="mactive">Atelier</a></li>
+                    </ul>
+                    
+                
+                <div id="icon"></div>
+            </nav>
+            <script src="script.js"></script>
                 <div class="contenu-page2">
                     <div class="desc-page2">
                         <h1>
@@ -80,6 +85,35 @@
                 </div>
 
             </div>
+
+        </section>
+        <section class="s-form">
+           <h1>
+            S'inscrire
+           </h1>
+            <div class="formm">
+                <div class="vd">
+                    <video  controls>
+                        <source src="../video/vd.mp4" type="video/mp4">
+                        
+                      Your browser does not support the video tag.
+                      </video>
+                    
+                </div>
+                <div class="f">
+                  
+                    <form action="">
+                        
+                        <input type="text" placeholder="Prénom" class="ifinsc">
+                        <input type="text" placeholder="Nom" class="ifinsc">
+                        <input type="text" placeholder="CIN" class="ifinsc">
+                        <input type="email" placeholder="E-mail" class="ifinsc">
+                        <input type="submit" class="sbmt">
+                        
+                    </form>
+                </div>
+            </div>
+            
 
         </section>
         <section class="a-s2">

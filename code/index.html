@@ -5,23 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MUSEM</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style-mobile.css">
+    
 </head>
 <body>
     <header class="page1">
-        <nav class="navi">
+        <nav class="navi" id="nav">
             <div class="logo">
                 <span>
                     MUSEM
                 </span>
             </div>
-            <div class="nav-bar">
+            
                 <ul class="navigation">
                     <li><a href="index.html" class="mactive">Acceuil</a></li>
                     <li><a href="galerie.html">Galerie</a></li>
                     <li><a href="atelier.html">Atelier</a></li>
                 </ul>
-            </div>
+                
+            
+            <div id="icon"></div>
         </nav>
         <div class="contenu-page1">
             <div class="desc-page1">
@@ -49,44 +52,9 @@
             <h1>
                 Catalogue de produits
             </h1>   
-            <div class="caroussel" data-carousel>
-                <button class="caroussel-button prev" data-carousel-button="prev">&#x2B9C;</button>
-                <button class="caroussel-button next" data-carousel-button="next">	&#x2B9E; </button>
-
-                
-                
-                <ul data-slides>
-                    <li class="slide" data-active>
-                        <img src="../Images/Sucrier.jpg" alt="" class="i">
-                        <div class="crou-desc">
-                            <h2>Sucrier</h2>
-                            <p>Les modèles présentés dans notre site web ne représentent qu’une petite sélection de notre catalogue. Pour recevoir notre catalogue intégral, nous vous invitons à nous contacter sur le lien suivant.</p>
-                            <a href="">Demandez</a>
-
-                        </div>
-                    </li>
-                    <li class="slide" >
-                        <img src="../Images/Sucrier.jpg" alt="" class="i">
-                        <div class="crou-desc">
-                            <h2>v</h2>
-                            <p>Les modèles présentés dans notre site web ne représentent qu’une petite sélection de notre catalogue. Pour recevoir notre catalogue intégral, nous vous invitons à nous contacter sur le lien suivant.</p>
-                            <a href="">Demandez</a>
-
-                        </div>
-                    </li>
-                    <li class="slide">
-                        <img src="../Images/Sucrier.jpg" alt="" class="i">
-                        <div class="crou-desc">
-                            <h2>h</h2>
-                            <p>Les modèles présentés dans notre site web ne représentent qu’une petite sélection de notre catalogue. Pour recevoir notre catalogue intégral, nous vous invitons à nous contacter sur le lien suivant.</p>
-                            <a href="">Demandez</a>
-
-                        </div>
-                    </li>
-                </ul>
-
-                
-            </div>
+            
+           
+           
 
         </section>
         <section class="s4">
@@ -110,7 +78,64 @@
         </section>
         <section class="faq">
             <h1>FAQ</h1>
+            
+            
+            <div class="faqq">
+                <div class="question">
+                    <h3>Quelle est l'histoire de la poterie de Safi ?</h3>
+                    <button>&#x2B9F;	</button>
+                </div>
+                <div class="reponse">
+                    <p>
+                        La poterie de Safi est une forme d'art ancienne qui remonte à des siècles. 
+                        La ville de Safi, réputée pour son artisanat céramique, perpétue une tradition 
+                        de poterie transmise de génération en génération, reflétant l'histoire riche et
+                         la culture du Maroc.
+                    </p>                                        
+                </div>
+            </div>
+            <div class="faqq">
+                <div class="question">
+                    <h3>Quels matériaux utilisez-vous pour la poterie de Safi ?</h3>
+                    <button>&#x2B9F;	</button>
+                </div>
+                <div class="reponse">
+                    <p>
+                        Nous utilisons principalement de l'argile de haute qualité, soigneusement sélectionnée pour sa durabilité et sa capacité à mettre en valeur les détails complexes des motifs et des designs uniques de la poterie de Safi.
+                    </p>                                        
+                </div>
+            </div>
+            <div class="faqq">
+                <div class="question">
+                    <h3>Vos produits sont-ils faits à la main ?</h3>
+                    <button>&#x2B9F;	</button>
+                </div>
+                <div class="reponse">
+                    <p>
+                        Oui, chaque pièce de notre collection est minutieusement façonnée à la main par nos artisans locaux expérimentés, qui maîtrisent l'art délicat de la poterie et donnent vie à des créations uniques imprégnées d'une histoire ancienne.                    </p>                                        
+                </div>
+            </div>
+            <div class="faqq">
+                <div class="question">
+                    <h3> Proposez-vous des cours ou des ateliers de poterie ?</h3>
+                    <button>&#x2B9F;	</button>
+                </div>
+                <div class="reponse">
+                    <p>
+                        Oui, nous organisons régulièrement des ateliers de poterie pour les amateurs et les passionnés d'artisanat. Ces cours sont conçus pour offrir une expérience pratique et éducative, permettant aux participants de plonger dans l'art intemporel de la poterie de Safi sous la direction de nos artisans qualifiés.                </div>
+            </div>
 
+            <div class="faqq">
+                <div class="question">
+                    <h3> Comment puis-je prendre soin de ma poterie de Safi ?</h3>
+                    <button>&#x2B9F;	</button>
+                </div>
+                <div class="reponse">
+                    <p>
+                        Nous recommandons de nettoyer doucement les pièces avec de l'eau tiède et un chiffon doux. Évitez les produits chimiques agressifs et assurez-vous de manipuler avec précaution les pièces fragiles. La poterie de Safi est conçue pour durer et embellir votre espace pendant de nombreuses années avec les soins appropriés.            </div>
+            
+            
+            <script src="script.js"></script>
         </section>
     </main>
     <footer>

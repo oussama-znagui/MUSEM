@@ -1,0 +1,38 @@
+ <div class="caroussel" data-carousel>
+                <button class="caroussel-button prev" data-carousel-button="prev">&#x2B9C;</button>
+                <button class="caroussel-button next" data-carousel-button="next">	&#x2B9E; </button>
+
+                
+                
+                <ul data-slides>
+                    <li class="slide" data-active>
+                        <img src="../Images/Sucrier.jpg" alt="" class="i">
+                        <div class="crou-desc">
+                            <h2>Sucrier</h2>
+                            <p>Les modèles présentés dans notre site web ne représentent qu’une petite sélection de notre catalogue. Pour recevoir notre catalogue intégral, nous vous invitons à nous contacter sur le lien suivant.</p>
+                            <a href="">Demandez</a>
+
+                        </div>
+                    </li>
+                    <li class="slide" >
+                        <img src="../Images/Sucrier.jpg" alt="" class="i">
+                        <div class="crou-desc">
+                            <h2>v</h2>
+                            <p>Les modèles présentés dans notre site web ne représentent qu’une petite sélection de notre catalogue. Pour recevoir notre catalogue intégral, nous vous invitons à nous contacter sur le lien suivant.</p>
+                            <a href="">Demandez</a>
+
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <img src="../Images/Sucrier.jpg" alt="" class="i">
+                        <div class="crou-desc">
+                            <h2>h</h2>
+                            <p>Les modèles présentés dans notre site web ne représentent qu’une petite sélection de notre catalogue. Pour recevoir notre catalogue intégral, nous vous invitons à nous contacter sur le lien suivant.</p>
+                            <a href="">Demandez</a>
+
+                        </div>
+                    </li>
+                </ul>
+
+                
+            </div>
