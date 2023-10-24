@@ -146,8 +146,12 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 /*-------------------------------------------------------------------------------------------------*/
 
 .s3{
-    height: 150vh;
+    height: 100vh;
     background-color: #EDEDED;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .s3 h1{
@@ -316,11 +320,11 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
     cursor: pointer;
 }
 
-.faqq.active .reponse{
+.faqq.activeee .reponse{
     max-height: 30em;
 }
 
-.faqq.active button{
+.faqq.activeee button{
     transform: rotate(180deg);
 }
 

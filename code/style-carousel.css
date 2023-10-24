@@ -1,0 +1,121 @@
+
+.slideshow-container {
+    width: 100%;    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em 0;
+    
+  }
+  .prev, .next {
+    cursor: pointer;  
+    width: auto;
+    padding: 1em;
+   
+    color: black;
+    font-weight: bold;
+    
+    transition: 0.6s ease;
+    font-size: ;
+    
+    
+    
+  } 
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  .np{
+      display: flex;
+      justify-content: space-between;
+      width: 70%;
+      position: absolute;
+      top: 40%;
+      
+  }
+  
+  .text {
+    color: black; 
+    width: 25%;
+    font-family: Inria Serif;
+    border-right: 1px solid #00153E;
+  
+  }
+  .text p{
+    font-size: 0.7em;
+    margin: 1em 0;
+    width: 85%;
+  }
+  .text h2{
+      font-family: 'Brogte', sans-serif;
+      color: #00153E;
+      font-size: 2em; 
+      
+  }
+  .text a{
+      background-color: white;
+      padding: 0.6em 2em;
+      color: #00153E;
+      display: inline-block;
+      margin: 1em 0;
+      text-decoration: none;
+      border: 2px solid #00153E;
+      font-weight: 700;
+  }
+  
+  .text a:hover{
+      
+      border: 2px solid white;
+      color: white;
+      background-color: #00153E;
+      transition-duration: 1s;
+  }
+  
+  
+  
+  .dot {
+    cursor: pointer;
+    height: 0.5em;
+    width: 0.5em;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    
+  }
+  
+  .active, .dot:hover {
+    background-color: #00153E;
+  }
+  
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    
+  }
+  .mySlides{
+      width: 100%;
+      display: flex;
+      gap: 3em;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  .i{
+      width: 30%;
+      height: 15em;
+  }
+  
+  
+  
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
