@@ -7,5 +7,5 @@ faqs.forEach(faqq => {
 })
 
 icon.addEventListener("click", () => {
-    nav.classList.toggle("activeee")
+    nav.classList.toggle("active")
 })
