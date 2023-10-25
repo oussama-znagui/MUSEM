@@ -41,6 +41,11 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
     text-decoration: none;
     color: white;
 }
+.navigation li a:hover{
+    
+    color: rgb(8, 115, 139);
+}
+
 
 .logo span{
     color: white;
@@ -367,6 +372,11 @@ footer p{
     text-align: center;
    
 }
+footer a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
 .tr{
     border-left: 1px solid white;
     height: 10em;
@@ -682,9 +692,11 @@ form{
 .ifinsc{
     width: 100%;
     background-color: transparent;
-    border-style: none;
+    height: 2em;
+    
     border-bottom: 2px solid white !important;
     margin: 1.5em 0;
+    color: white;
     
 }
 .sbmt{

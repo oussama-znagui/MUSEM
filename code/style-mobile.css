@@ -12,6 +12,7 @@
             width: 100%;
             text-align: center;
             transition: 0.5s;
+            opacity: 0.95;
 
         
     }
@@ -39,7 +40,7 @@
 
     
     .navi ul li:hover{
-         background: rgb(158, 253, 253);
+         background: #2a2a2a;
     }
 
     #icon{
@@ -285,7 +286,8 @@
         width: 50%;
         margin: 0 auto;
         padding: 1em 4em !important;
-        text-align: center;
+        display: flex;
+        justify-content: center;
     }
 
     .text p{
@@ -337,5 +339,10 @@
         flex-direction: column;
         justify-content: center;
         gap: 1em;
+    }
+
+    .S3-g{
+        height: auto;
+        padding: 1em;
     }
 }
